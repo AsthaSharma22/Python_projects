@@ -11,3 +11,4 @@ def calc(a,b):
 total,product = calc(10,20)
 print(total)
 print(product)
+print(total)
