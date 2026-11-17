@@ -1,0 +1,22 @@
+a=input().strip().lower()
+b=input().strip().lower()
+if(a=="rock" and b=="paper" ):
+    print("B is the Winner.")
+if(a =="paper" and b=="paper"):
+    print("Match Tie.")
+if(a=="scissor" and b=="paper"):
+    print("A is Winner.")
+    
+if(a=="rock" and b=="rock"):
+    print("Match Tie.")
+if(a =="paper" and b=="rock"):
+    print("A is the Winner.")
+if(a=="scissor" and b=="rock"):
+    print("B is the Winner.")
+
+if(a=="rock" and b=="scissor"):
+    print("A is Winner.")
+if(a =="paper" and b=="scissor"):
+    print("B is the winner.")
+if(a=="scissor" and b=="scissor"):
+    print("Match Tie.")
