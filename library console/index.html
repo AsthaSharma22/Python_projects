@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abode of Books - Library Management System</title>
+    <!-- Linking the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>WELCOME TO THE ABODE OF BOOKS :)</h1>
+        <p>Your one-stop digital library to view, borrow, rent, buy, and return books.</p>
+    </header>
+
+    <main>
+        <!-- Section 1: View Books Catalog -->
+        <section id="catalog-section">
+            <h2>Library Book Catalog</h2>
+            <ul id="book-list">
+                <li>1. All Quiet on the Western Front by Erich Maria Remarque - 5 copies available</li>
+                <li>2. The Book Thief by Markus Zusak - 5 copies available</li>
+                <li>3. War and Peace by Leo Tolstoy - 5 copies available</li>
+                <li>4. The Kite Runner by Khaled Hosseini - 5 copies available</li>
+                <li>5. A Thousand Splendid Suns by Khaled Hosseini - 5 copies available</li>
+                <li>6. The Odyssey by Homer - 5 copies available</li>
+                <li>7. The Palace of Illusions by Chitra Banerjee - 5 copies available</li>
+                <li>8. The Mistress of Spices by Chitra Banerjee - 5 copies available</li>
+                <li>9. The Housemaid by Freida McFadden - 5 copies available</li>
+                <li>10. Never Lie by Freida McFadden - 5 copies available</li>
+            </ul>
+        </section>
+
+        <!-- Section 2: Library Actions (Forms for Borrow, Rent, Buy, Return) -->
+        <section id="actions-section">
+            <h2>Library Transactions</h2>
+            
+            <!-- Borrow / Rent / Buy Form -->
+            <form id="transaction-form">
+                <h3>Select a Book Action</h3>
+                
+                <label for="book-select">Choose a Book:</label>
+                <select id="book-select" name="book">
+                    <option value="1">1. All Quiet on the Western Front</option>
+                    <option value="2">2. The Book Thief</option>
+                    <option value="3">3. War and Peace</option>
+                    <option value="4">4. The Kite Runner</option>
+                    <option value="5">5. A Thousand Splendid Suns</option>
+                    <option value="6">6. The Odyssey</option>
+                    <option value="7">7. The Palace of Illusions</option>
+                    <option value="8">8. The Mistress of Spices</option>
+                    <option value="9">9. The Housemaid</option>
+                    <option value="10">10. Never Lie</option>
+                </select>
+                <br><br>
+
+                <label for="action-type">Action Type:</label>
+                <select id="action-type" name="action">
+                    <option value="borrow">Borrow</option>
+                    <option value="rent">Rent (14 Days)</option>
+                    <option value="buy">Purchase</option>
+                </select>
+                <br><br>
+
+                <button type="submit">Submit Request</button>
+            </form>
+
+            <br><hr><br>
+
+            <!-- Return Form -->
+            <form id="return-form">
+                <h3>Return a Book</h3>
+                <label for="return-category">Category:</label>
+                <select id="return-category" name="category">
+                    <option value="borrowed">Borrowed</option>
+                    <option value="rented">Rented</option>
+                </select>
+                <br><br>
+
+                <label for="return-title">Book Title:</label>
+                <input type="text" id="return-title" placeholder="Enter exact book title">
+                <br><br>
+
+                <button type="submit">Return Book</button>
+            </form>
+        </section>
+
+        <!-- Section 3: User Dashboard / Active Items -->
+        <section id="dashboard-section">
+            <h2>My Dashboard</h2>
+            
+            <div>
+                <h3>Borrowed Books</h3>
+                <ul id="my-borrowed">
+                    <li>No books borrowed yet.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Rented Books</h3>
+                <ul id="my-rented">
+                    <li>No books rented yet.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Purchased Books</h3>
+                <ul id="my-purchased">
+                    <li>No books purchased yet.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    	<!-- Section 4: Contact Library -->
+        <section id="contact-section">
+            <h2>Contact Library</h2>
+            <form id="contact-form">
+                <label for="contact-name">Your Name:</label>
+                <input type="text" id="contact-name" placeholder="Enter your name" required>
+                <br><br>
+
+                <label for="contact-email">Email:</label>
+                <input type="email" id="contact-email" placeholder="Enter your email" required>
+                <br><br>
+
+                <label for="contact-query">Your Query:</label>
+                <textarea id="contact-query" rows="4" placeholder="Type your query here..." required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; font-size: 1rem;"></textarea>
+                <br><br>
+
+                <button type="submit">Submit Query</button>
+            </form>
+        </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Abode of Books. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

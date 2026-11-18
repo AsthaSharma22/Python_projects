@@ -1,0 +1,146 @@
+/* Cozy Vintage Library Theme: Abode of Books */
+body {
+    font-family: 'Georgia', serif; /* Gives a classic book feel */
+    background-color: #fcf9f2; /* Warm parchment look */
+    color: #2b2b2b;
+    margin: 0;
+    padding: 30px;
+    line-height: 1.7;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #4a2e18, #2c1a0e); /* Rich mahogany gradient */
+    color: #f3e9dc;
+    padding: 40px 20px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid #d4af37; /* Subtle gold accent */
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    color: #d1c2a5;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+/* Main Container layout */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Box Sections */
+section {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(74, 46, 24, 0.08); /* Warm-toned shadow */
+    border-left: 5px solid #8c5830; /* Cozy wooden accent strip on the side */
+    transition: transform 0.2s ease;
+}
+
+section:hover {
+    transform: translateY(-2px);
+}
+
+section h2 {
+    margin-top: 0;
+    color: #4a2e18;
+    border-bottom: 2px solid #f0e6d6;
+    padding-bottom: 10px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    padding: 4px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+/* Form Controls */
+label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #5c3a21;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcd2c3;
+    background-color: #faf8f5;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+select:focus, input[type="text"]:focus {
+    outline: none;
+    border-color: #8c5830;
+    background-color: #fff;
+}
+
+button {
+    background-color: #8c5830; /* Warm mahogany button */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    font-family: inherit;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button:hover {
+    background-color: #6b4120;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #8c7355;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+/* Ensure the textarea matches your existing text inputs */
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: inherit; /* Keeps the same font as the rest of the form */
+    resize: vertical; /* Prevents layout breakage from horizontal resizing */
+}
+
+/* Ensure the contact form spacing matches your other forms */
+#contact-form label {
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 5px;
+}
