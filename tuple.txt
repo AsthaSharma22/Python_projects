@@ -1,0 +1,6 @@
+contact =('astha',20,'student')
+
+name,age,role = contact
+
+print(name)
+print(age)
